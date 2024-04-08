@@ -1,51 +1,51 @@
 user_id,interests,consent_given
-1,	travel|food	FALSE
-2,	art|gaming	FALSE
-3,	food|technology|fashion	TRUE
-4,	gaming|fashion	FALSE
-5,	music|food|programming|sports|art	TRUE
-6,	travel|music|sports|gaming	TRUE
-7,	programming|sports	FALSE
-8,	art|gaming|literature|fashion	TRUE
-9,	gaming|art|technology|travel|literature	FALSE
-10,	art|food|technology|sports	FALSE
-11,	technology|literature	TRUE
-12,	sports|fashion	FALSE
-13,	technology|literature|fashion	TRUE
-14,	programming|gaming|food|music	TRUE
-15,	fashion|gaming|travel	TRUE
-16,	food|fashion	FALSE
-17,	gaming|technology|literature	TRUE
-18,	music|programming|gaming|food|art	TRUE
-19,	technology|fashion	FALSE
-20,	programming|sports|technology	TRUE
-21,	food|art|technology|travel|fashion	TRUE
-22,	food|travel|fashion	FALSE
-23,	fashion|sports|literature|technology|art	TRUE
-24,	technology|art	FALSE
-25,	technology|travel	FALSE
-26,	programming|technology	FALSE
-27,	fashion|gaming	TRUE
-28,	technology|programming|travel|music|gaming	FALSE
-29,	food|technology	FALSE
-30,	literature|art|gaming|technology	FALSE
-31,	music|programming	TRUE
-32,	food|art|programming|music	TRUE
-33,	travel|technology|sports|food|gaming	TRUE
-34,	food|programming|fashion|literature	FALSE
-35,	food|sports	FALSE
-36,	music|sports|fashion|literature|technology	TRUE
-37,	music|gaming|programming|literature	TRUE
-38,	programming|literature|sports	FALSE
-39,	technology|programming	TRUE
-40,	gaming|music|technology	TRUE
-41,	fashion|literature|programming|gaming|art	TRUE
-42,	food|gaming	FALSE
-43,	travel|sports|fashion	TRUE
-44,	programming|gaming	TRUE
-45,	literature|music	FALSE
-46,	music|literature	FALSE
-47,	travel|technology|fashion	FALSE
-48,	gaming|travel|music|technology	FALSE
-49,	music|gaming|art|travel	FALSE
-50,	music|food|fashion|technology	TRUE
+1,travel|food,FALSE
+2,art|gaming,FALSE
+3,food|technology|fashion,TRUE
+4,gaming|fashion,FALSE
+5,music|food|programming|sports|art,TRUE
+6,travel|music|sports|gaming,TRUE
+7,programming|sports,FALSE
+8,art|gaming|literature|fashion,TRUE
+9,gaming|art|technology|travel|literature,FALSE
+10,art|food|technology|sports,FALSE
+11,technology|literature,TRUE
+12,sports|fashion,FALSE
+13,technology|literature|fashion,TRUE
+14,programming|gaming|food|music,TRUE
+15,fashion|gaming|travel,TRUE
+16,food|fashion,FALSE
+17,gaming|technology|literature,TRUE
+18,music|programming|gaming|food|art,TRUE
+19,technology|fashion,FALSE
+20,programming|sports|technology,TRUE
+21,food|art|technology|travel|fashion,TRUE
+22,food|travel|fashion,FALSE
+23,fashion|sports|literature|technology|art,TRUE
+24,technology|art,FALSE
+25,technology|travel,FALSE
+26,programming|technology,FALSE
+27,fashion|gaming,TRUE
+28,technology|programming|travel|music|gaming,FALSE
+29,food|technology,FALSE
+30,literature|art|gaming|technology,FALSE
+31,music|programming,TRUE
+32,food|art|programming|music,TRUE
+33,travel|technology|sports|food|gaming,TRUE
+34,food|programming|fashion|literature,FALSE
+35,food|sports,FALSE
+36,music|sports|fashion|literature|technology,TRUE
+37,music|gaming|programming|literature,TRUE
+38,programming|literature|sports,FALSE
+39,technology|programming,TRUE
+40,gaming|music|technology,TRUE
+41,fashion|literature|programming|gaming|art,TRUE
+42,food|gaming,FALSE
+43,travel|sports|fashion,TRUE
+44,programming|gaming,TRUE
+45,literature|music,FALSE
+46,music|literature,FALSE
+47,travel|technology|fashion,FALSE
+48,gaming|travel|music|technology,FALSE
+49,music|gaming|art|travel,FALSE
+50,music|food|fashion|technology,TRUE
