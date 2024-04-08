@@ -1,0 +1,51 @@
+import matplotlib.pyplot as plt
+import csv
+
+def fetch_data_with_consent(user_profiles):
+    return [profile for profile in user_profiles if profile['consent_given']]
+
+def anonymize_data(data):
+    return [{'interests': profile['interests']} for profile in data]
+
+def analyze_data(data):
+    interests_count = {}
+    for profile in data:
+        for interest in profile['interests']:
+            if interest in interests_count:
+                interests_count[interest] += 1
+            else:
+                interests_count[interest] = 1
+    return interests_count
+
+def plot_interests(interests_count):
+    interests = list(interests_count.keys())
+    counts = list(interests_count.values())
+
+    plt.figure(figsize=(10, 6))
+    plt.bar(interests, counts, color='skyblue')
+    plt.xlabel('Interests')
+    plt.ylabel('Count')
+    plt.title('Most Common Interests Among Users')
+    plt.xticks(rotation=45)
+    plt.show()
+
+def read_user_profiles(filename):
+    user_profiles = []
+    with open(filename, newline='') as csvfile:
+        reader = csv.DictReader(csvfile)
+        for row in reader:
+            row['interests'] = row['interests'].split('|')
+            row['consent_given'] = row['consent_given'] == 'True'
+            user_profiles.append(row)
+    return user_profiles
+
+def main(filename):
+    user_profiles = read_user_profiles(filename)
+    data_with_consent = fetch_data_with_consent(user_profiles)
+    anonymized_data = anonymize_data(data_with_consent)
+    analysis_results = analyze_data(anonymized_data)
+    plot_interests(analysis_results)
+
+if __name__ == "__main__":
+    filename = "user_profiles.csv"  # Adjust as needed
+    main(filename)
