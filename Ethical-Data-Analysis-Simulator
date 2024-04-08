@@ -1,0 +1,42 @@
+# Ethical Data Analysis Simulator
+
+# Mock data representing user profiles
+# In a real scenario, obtaining this data would require explicit user consent
+user_profiles = [
+    {'user_id': 1, 'interests': ['technology', 'programming', 'music'], 'consent_given': True},
+    {'user_id': 2, 'interests': ['sports', 'technology', 'travel'], 'consent_given': True},
+    {'user_id': 3, 'interests': ['literature', 'travel', 'food'], 'consent_given': False},
+    # Additional mock profiles...
+]
+
+def fetch_data_with_consent(user_profiles):
+    """Fetches data for users who have given consent."""
+    return [profile for profile in user_profiles if profile['consent_given']]
+
+def anonymize_data(data):
+    """Removes identifiable information from the data."""
+    return [{'interests': profile['interests']} for profile in data]
+
+def analyze_data(data):
+    """Analyzes the data to find the most common interests."""
+    interests_count = {}
+    for profile in data:
+        for interest in profile['interests']:
+            if interest in interests_count:
+                interests_count[interest] += 1
+            else:
+                interests_count[interest] = 1
+    return interests_count
+
+# Main function to run the program
+def main():
+    data_with_consent = fetch_data_with_consent(user_profiles)
+    anonymized_data = anonymize_data(data_with_consent)
+    analysis_results = analyze_data(anonymized_data)
+    
+    print("Most Common Interests Among Users (Anonymized Data):")
+    for interest, count in analysis_results.items():
+        print(f"{interest}: {count}")
+
+if __name__ == "__main__":
+    main()
